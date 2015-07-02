@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/components/parallax.min.js"></script>
+    <script src="js/components/sticky.min.js"></script>
+    <script src="js/dropcap.js"></script>
+    <script>
+    $(document).ready(function(){
+    // We retrieve our drop cap elements using a class selector...
+    var dropcaps = document.querySelectorAll(".dropcap"); 
+    // ...then give them a height of three lines. 
+    // By default, the drop cap's baseline will also be the third paragraph line.
+    window.Dropcap.layout(dropcaps, 3); });
+</script>
+</head>
+
+<body>
+    <div class="uk-grid">
+
+        <div class="uk-width-2-10"></div>
+        <div class="uk-width-6-10 uk-container-center">
+            <nav class="uk-navbar">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">Home</a>
+                    </li>
+                    <li><a href="">Slow Living</a>
+                    </li>
+                    <li class="uk-parent"><a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="uk-width-2-10"></div>
+        <div class="uk-width-1-1" data-uk-parallax="{bg: '-200'}" id="header">
+            <div class="uk-grid">
+                <div class="uk-width-2-10"></div>
+                <div class="uk-width-6-10">
+                    <h1 data-uk-parallax="{opacity:0, viewport: 0.7, y:100}" class="uk-align-center">Art as War</h1>
+                    <h2 data-uk-parallax="{opacity:0, viewport: 0.4, y:100}">Why the struggle isn't worth it.</h2>
+                </div>
+                <div class="uk-width-2-10"></div>
+            </div>
+        </div>
+        <div class="uk-width-1-10"></div>
+        <div class="uk-width-1-10">
+            <div data-uk-sticky><a href="" class="uk-icon-justify uk-icon-github">Github</a>
+            </div>
+        </div>
+        <div class="uk-width-6-10">
+            <article class="uk-article">
+            <div style="background-image:url(images/P1010005.JPG); height:300px; background-size:cover;"></div><h1 class="uk-article-title">
+            Article 1    
+            </h1>
+                <p class="uk-article-lead"><span class="dropcap">H</span>ic quae occaecat. Se ex quae fore fugiat ubi iudicem enim vidisse cupidatat. 
+                    Minim eiusmod possumus quo amet pariatur te quem amet, consequat nam nisi 
+                    incurreret, duis voluptate e quis quae, ullamco ex tamen deserunt o de aliqua 
+                    nam quorum ea velit probant se eiusmod se te fore officia. Varias incididunt ex 
+                    ullamco sed de fugiat enim velit excepteur. Doctrina legam lorem commodo velit. 
+                    Enim laborum ita irure quid ea ut voluptate firmissimum ex nam lorem senserit 
+                    mentitum, varias exercitation deserunt esse ullamco. A veniam proident admodum, 
+                    et in quem ullamco. Multos arbitror do occaecat non labore litteris ab quae 
+                    magna quo non nisi dolore quae senserit sed anim voluptate nostrud.</p>
+                <div class="uk-grid">
+                <div>5 Comments</div> <div><button class="uk-button" data-uk-toggle="{target: #social-share}">Share</button><span id="social-share" class="uk-hidden"><a href="" class="uk-icon-hover uk-icon-facebook"></a><a href="" class="uk-icon-hover uk-icon-pinterest"></a><a href="" class="uk-icon-hover uk-icon-twitter"></a><a href="" class="uk-icon-hover uk-icon-google-plus"></a></span></div>
+                </div>
+            </article>
+            <article class="uk-article">
+            <div style="background-image:url(images/P1010005.JPG); height:300px; background-size:cover;"></div>
+            <h1 class="uk-article-title">
+            Article 1    
+            </h1>
+                <p class="uk-article-lead"><span class="dropcap">S</span>e ex quae fore fugiat ubi iudicem enim vidisse cupidatat. 
+                    Minim eiusmod possumus quo amet pariatur te quem amet, consequat nam nisi 
+                    incurreret, duis voluptate e quis quae, ullamco ex tamen deserunt o de aliqua 
+                    nam quorum ea velit probant se eiusmod se te fore officia. Varias incididunt ex 
+                    ullamco sed de fugiat enim velit excepteur. Doctrina legam lorem commodo velit. 
+                    Enim laborum ita irure quid ea ut voluptate firmissimum ex nam lorem senserit 
+                    mentitum, varias exercitation deserunt esse ullamco. A veniam proident admodum, 
+                    et in quem ullamco. Multos arbitror do occaecat non labore litteris ab quae 
+                    magna quo non nisi dolore quae senserit sed anim voluptate nostrud.</p>
+            </article>
+            <article class="uk-article">
+            <div style="background-image:url(images/P1010005.JPG); height:300px; background-size:cover;"></div>
+            <h1 class="uk-article-title">
+            Article 1    
+            </h1>
+                <p class="uk-article-lead"><span class="dropcap">T</span>ic quae occaecat. Se ex quae fore fugiat ubi iudicem enim vidisse cupidatat. 
+                    Minim eiusmod possumus quo amet pariatur te quem amet, consequat nam nisi 
+                    incurreret, duis voluptate e quis quae, ullamco ex tamen deserunt o de aliqua 
+                    nam quorum ea velit probant se eiusmod se te fore officia. Varias incididunt ex 
+                    ullamco sed de fugiat enim velit excepteur. Doctrina legam lorem commodo velit. 
+                    Enim laborum ita irure quid ea ut voluptate firmissimum ex nam lorem senserit 
+                    mentitum, varias exercitation deserunt esse ullamco. A veniam proident admodum, 
+                    et in quem ullamco. Multos arbitror do occaecat non labore litteris ab quae 
+                    magna quo non nisi dolore quae senserit sed anim voluptate nostrud.</p>
+            </article>
+        </div>
+        <div class="uk-width-2-10"></div>
+    </div>
+</body>
+
+</html>
