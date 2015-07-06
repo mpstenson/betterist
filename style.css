@@ -27,6 +27,57 @@
 .header-menu {
   margin-top:6px; margin-left:30px;
 }
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+.header-menu ul  {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    padding-top:15px;
+    padding-bottom:6px;
+    padding-left: 5px;
+    margin-left:0px;
+    list-style-type: none;
+}
+
+/* Display Dropdowns on Hover */
+.header-menu li:hover > ul {
+    display:inherit;
+}
+
+/* Fisrt Tier Dropdown */
+.header-menu ul li {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+
+}
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content: " "; font-family: 'FontAwesome';}
+li > a:only-child:after { content: ''; }
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+.header-menu ul ul {
+    position: absolute;
+    top:0;
+    left:100%;
+}
+
+.header-menu ul li a{
+  color:#000;
+}
+.header-menu ul li a:hover{
+  color:#000;
+  text-decoration:none;
+}
+
+
+Read more: http://webdesignerhut.com/css-dropdown-menu/#ixzz3f46gM4Z5
 article {
  border-bottom-style: dashed;
 border-bottom-width: 1px;
@@ -38,8 +89,17 @@ border-bottom-width: 1px;
    padding-bottom:30px;
    margin-bottom:50px;
 }
-.dropcap{font-family: 'Josefin Slab', serif;}
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
+.entry-content p:first-child:first-letter {
+  float: left;
+    color: #000;
+    font-size: 79px;
+    line-height: 44px;
+    padding-top: 19px;
+    padding-right: 3px;
+    padding-left: 0px;
+    font-family: 'Josefin Slab', serif;
+    }

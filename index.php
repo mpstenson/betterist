@@ -12,15 +12,6 @@
         <script src="<?php echo get_bloginfo('template_url'); ?>/js/uikit.min.js"></script>
         <script src="<?php echo get_bloginfo('template_url'); ?>/js/components/parallax.min.js"></script>
         <script src="<?php echo get_bloginfo('template_url'); ?>/js/components/sticky.min.js"></script>
-        <script src="<?php echo get_bloginfo('template_url'); ?>/js/dropcap.js"></script>
-        <script>
-        $(document).ready(function(){
-        // We retrieve our drop cap elements using a class selector...
-        var dropcaps = document.querySelectorAll(".dropcap");
-        // ...then give them a height of three lines.
-        // By default, the drop cap's baseline will also be the third paragraph line.
-        window.Dropcap.layout(dropcaps, 3); });
-    </script>
     </head>
     <body>
       <!---<div class="uk-width-medium-1-2 " style="background-color:#fff; padding-bottom:4px; z-index:1000" data-uk-sticky >
@@ -72,11 +63,11 @@ wp_nav_menu( $defaults );
                   <h1 data-uk-parallax="{opacity:0, viewport: 1, y:0}" class="uk-align-center"><a title="Permanent link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                   <h2 data-uk-parallax="{opacity:0, viewport: 1.5, y:100}"><?php echo the_excerpt(); ?> </h2>
                   <!--<div class="uk-width-2-10 uk-align-center">Read More</div>-->
-                  <a href="#article1" data-uk-parallax="{opacity:0, viewport: 1, y:200}" class="uk-icon-angle-double-down uk-align-center" style="font-size:40px; text-align:center; color:#000" data-uk-smooth-scroll="{offset: 50}"></a>
+                  <a href="#post-<?php the_ID(); ?>" data-uk-parallax="{opacity:0, viewport: 1, y:200}" class="uk-icon-angle-double-down uk-align-center" style="font-size:40px; text-align:center; color:#000" data-uk-smooth-scroll="{offset: 50}"></a>
                   <div class="uk-width-1-10"></div></div></div></div>
             <div class="uk-width-2-10"></div><div class="uk-width-6-10">
-              <article id="article1"><p><span class="dropcap">H</span>
-                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+              <article id="post-<?php the_ID(); ?>">
+                <div>
 
 
                 	<div class="entry-content">
