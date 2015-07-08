@@ -146,7 +146,7 @@ body{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
 }
-article:first-child p:first-child:first-letter {
+article > p:first-child:first-letter {
   float: left;
     color: #000;
     font-size: 79px;
@@ -156,3 +156,4 @@ article:first-child p:first-child:first-letter {
     padding-left: 0px;
     font-family: 'Josefin Slab', serif;
     }
+    
