@@ -151,9 +151,8 @@ article > p:first-child:first-letter {
     color: #000;
     font-size: 79px;
     line-height: 44px;
-    padding-top: 19px;
-    padding-right: 3px;
+    padding-top: 5px;
+    padding-right: 0px;
     padding-left: 0px;
     font-family: 'Josefin Slab', serif;
     }
-    
