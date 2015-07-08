@@ -7,16 +7,20 @@
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php if (has_post_thumbnail( $post->ID ) ): ?>
               <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-              <div class="uk-width-1-1 header-container" style="background-image: url('<?php echo $image[0]; ?>')" data-uk-parallax="{bg: '-400'}">
-
+              <div class="uk-width-1-1" style="background-image: url('<?php echo $image[0]; ?>')" data-uk-parallax="{bg: '-400'}">
+                <div class="uk-grid">
+                  <div class="uk-width-1-10"></div>
+                  <div class="uk-width-8-10">
+                    <h1 data-uk-parallax="{opacity:0, viewport: -.5, y:0}" class="uk-align-center"><a title="Permanent link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                  </div>
+                  <div class="uk-width-1-10"></div>
+                </div>
+</div>
 <?php endif; ?>
 
 
-              <div class="uk-grid">
-                <div class="uk-width-1-10"></div>
-                <div class="uk-width-8-10">
-                  <h1 data-uk-parallax="{opacity:0, viewport: -.5, y:0}" class="uk-align-center"><a title="Permanent link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                  <div class="uk-width-1-10"></div>
+
+                  <div class="uk-grid">
             <div class="uk-width-2-10"></div><div class="uk-width-6-10">
               <article id="post-<?php the_ID(); ?>">
 
@@ -46,6 +50,7 @@
             </article>
         </div>
             <div class="uk-width-2-10"></div>
+          </div>
             <?php endwhile; ?>
             <!-- post navigation -->
           <?php else: ?>
