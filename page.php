@@ -11,7 +11,7 @@
                 <div class="uk-grid">
                   <div class="uk-width-1-10"></div>
                   <div class="uk-width-8-10">
-                    <h1 data-uk-parallax="{opacity:0, viewport: -.5, y:0}" class="uk-align-center"><a title="Permanent link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                    <h1 data-uk-parallax="{opacity:0, viewport: -.5, y:0}" class="uk-align-center page-header"><a title="Permanent link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                   </div>
                   <div class="uk-width-1-10"></div>
                 </div>
