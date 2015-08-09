@@ -142,10 +142,11 @@ border-bottom-width: 1px;
     border-bottom-color: #000;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 15px;
-   padding-top:15px;
+    font-size: 18px;
+   padding-top:30px;
    padding-bottom:30px;
    margin-bottom:50px;
+   line-height: 26px;
 }
 body{
   font-family: 'Lato', sans-serif;

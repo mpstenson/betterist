@@ -1,6 +1,7 @@
 <?php
 //Give the theme featured images
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-formats', array( 'video', 'status' ) );
 //Register the main menu
 function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
