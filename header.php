@@ -10,8 +10,9 @@
 
 
 <body>
+<div class="uk-grid" style="height:50px">
 
-<div class="uk-width-medium-1-2 " style="background-color:#fff; padding-bottom:4px; z-index:1000" data-uk-sticky >
+<div class="uk-width-medium-1-2" style="background-color:#fff; padding-bottom:4px; z-index:1000" >
 <?php
 
 $defaults = array(
@@ -36,4 +37,6 @@ $defaults = array(
 wp_nav_menu( $defaults );
 
 ?>
+</div>
+<div class="uk-width-medium-1-2" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/logowide.svg" style="height:50px; float:right;"></div>
 </div>

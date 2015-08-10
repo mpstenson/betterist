@@ -32,6 +32,7 @@
 /* Giving a background-color to the nav container. */
 nav {
 	margin: 0px 0;
+  margin-top:10px;
 	background-color: #fff;
   padding-top:5px;
   padding-bottom:5px;
@@ -136,6 +137,9 @@ li > a:after { content:  ' '; font-family: 'FontAwesome';font-weight: 100; fo
 nav ul ul li > a:after { content:  ' '; font-family: 'FontAwesome';font-weight: 100; font-size: 12px;}
 li > a:only-child:after { content: ''; }
 
+#content-container {
+  margin-top:0px;
+}
 article {
  border-bottom-style: dashed;
 border-bottom-width: 1px;
@@ -151,6 +155,10 @@ border-bottom-width: 1px;
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
+}
+#site-title h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
 article > p:first-child:first-letter {
   float: left;
