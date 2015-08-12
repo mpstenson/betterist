@@ -1,6 +1,15 @@
+/*
+Theme Name: Betterist
+Theme URI: https://github.com/mpstenson/betterist
+Author: Matt Stenson
+Author URI: mattstenson.com
+Description: This theme is designed to combine impactful photographry and well crafted typography to yeild a delightful reading experience.
+Version: 1.0
+
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400|Josefin+Slab:400,600,700);
 .header-container{
- background-image:url(../images/IMG_7690.jpg);
     height: 100vh;
 }
 .header-container h1 {
