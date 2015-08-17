@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 <?php get_header(); ?>
-
-
-
-
         <div class="uk-grid" id="content-container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -22,7 +18,7 @@
                   <!--<div class="uk-width-2-10 uk-align-center">Read More</div>-->
                   <a href="#post-<?php the_ID(); ?>" data-uk-parallax="{opacity:0, viewport: -.5, y:200}" class="uk-icon-angle-double-down uk-align-center" style="font-size:40px; text-align:center; color:#000" data-uk-smooth-scroll="{offset: 0}"></a>
                   <div class="uk-width-1-10"></div></div></div></div>
-            <div class="uk-width-2-small-10"></div><div class="uk-width-small-6-10">
+            <div class="uk-width-small-2-10"></div><div class="uk-width-small-6-10">
               <article id="post-<?php the_ID(); ?>">
 
 
