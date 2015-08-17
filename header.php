@@ -38,5 +38,5 @@ wp_nav_menu( $defaults );
 
 ?>
 </div>
-<div class="uk-width-medium-1-2" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/logowide.svg" style="height:50px; float:right;"></div>
+<div class="uk-width-medium-1-2" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/logowide.png" style="height:50px; float:right;"></div>
 </div>
