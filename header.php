@@ -12,7 +12,7 @@
 <body>
 <div class="uk-grid" style="height:50px">
 
-<div class="uk-width-medium-1-2" style="background-color:#fff; padding-bottom:4px; z-index:1000" >
+<div class="uk-width-1-2" style="background-color:#fff; padding-bottom:4px; z-index:1000" >
 <?php
 
 $defaults = array(
@@ -38,5 +38,5 @@ wp_nav_menu( $defaults );
 
 ?>
 </div>
-<div class="uk-width-medium-1-2" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/LogoWide.png" style="height:50px; float:right;"></div>
+<div class="uk-width-1-2" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/LogoWide.png" style="height:50px; float:right;"></div>
 </div>
