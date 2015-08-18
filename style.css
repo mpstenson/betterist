@@ -179,7 +179,7 @@ article > p:first-child:first-letter {
     padding-left: 0px;
     font-family: 'Josefin Slab', serif;
     }
-    @media (max-width:480px) {
+    @media (max-width:768px) {
       article {
          padding-left:10px;
       }

@@ -21,7 +21,7 @@
 
 
                   <div class="uk-grid">
-            <div class="uk-width-small-2-10"></div><div class="uk-width-small-6-10">
+            <div class="uk-width-medium-2-10"></div><div class="uk-width-medium-6-10">
               <article id="post-<?php the_ID(); ?>">
 
                 		<?php
@@ -49,7 +49,7 @@
 
             </article>
         </div>
-            <div class="uk-width-small-2-10"></div>
+            <div class="uk-width-medium-2-10"></div>
           </div>
             <?php endwhile; ?>
             <!-- post navigation -->
