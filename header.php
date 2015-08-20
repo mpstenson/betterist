@@ -1,18 +1,33 @@
 <head>
     <title></title>
-    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/css/uikit.min.css" />
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="<?php echo get_bloginfo('template_url'); ?>/js/uikit.min.js"></script>
-    <script src="<?php echo get_bloginfo('template_url'); ?>/js/components/parallax.min.js"></script>
-    <script src="<?php echo get_bloginfo('template_url'); ?>/js/components/sticky.min.js"></script>
+    <script>
+    $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 </head>
 
 
 <body>
-<div class="uk-grid" style="height:50px">
+  <div style="position:fixed; width:100%; background-color:#fff; ">
+<div class="bet-grid" style="height:50px;">
 
-<div class="uk-width-1-2" style="background-color:#fff; padding-bottom:4px; z-index:1000" >
+<div class="bet-col-5-10" style="padding-bottom:4px; z-index:1000" >
 <?php
 
 $defaults = array(
@@ -38,5 +53,6 @@ wp_nav_menu( $defaults );
 
 ?>
 </div>
-<div class="uk-width-1-2" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/LogoWide.png" style="height:50px; float:right;"></div>
+<div class="bet-col-5-10" id="site-title"><img src="<?php echo get_bloginfo('template_url'); ?>/images/LogoWide.png" style="height:50px; float:right;"></div>
+</div>
 </div>

@@ -9,8 +9,68 @@ Version: 1.0
 */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400|Josefin+Slab:400,600,700);
+/*grid stuff*/
+.bet-grid
+{
+
+}
+[class*='bet-col-'] {
+  float: left;
+  min-height: 1px;
+}
+.bet-col-1-1
+{
+  width: 100%;
+}
+.bet-col-1-10 {
+  width:10%;
+}
+.bet-col-2-10 {
+  width:20%;
+}
+.bet-col-3-10 {
+  width:40%;
+}
+.bet-col-4-10 {
+  width:40%;
+}
+.bet-col-5-10 {
+  width:50%;
+}
+.bet-col-6-10 {
+  width:60%;
+}
+.bet-col-7-10 {
+  width:70%;
+}
+.bet-col-8-10 {
+  width:80%;
+}
+.bet-col-9-10 {
+  width:90%;
+}
+.bet-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-device-width:768px) {
+  .bet-responsive-hide {
+    display:none;
+  }
+  .bet-responsive-stretch{
+    width:100%;
+  }
+  article{
+    padding-left:30px;
+    padding-right:30px;
+    word-wrap: break-word;      /* IE */
+  }
+}
 .header-container{
     height: 100vh;
+    background-size:cover;
+    background-attachment: fixed;
 }
 .header-container h1 {
     padding-top:100px;
@@ -18,11 +78,12 @@ Version: 1.0
     text-transform:uppercase;
     font-family: 'Josefin Slab', serif;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 4em;
     color: #000;
 }
 .header-container h1 a {
     color: #000;
+    text-decoration: none;
 }
 .header-container h1 a:hover {
     text-decoration: none;
@@ -86,7 +147,7 @@ nav a {
 	display:block;
 	padding:0 10px;
 	color:#000;
-	font-size:14px;
+	font-size:1em;
 	line-height: 20px;
 	text-decoration:none;
 }
@@ -155,7 +216,7 @@ border-bottom-width: 1px;
     border-bottom-color: #000;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1em;
    padding-top:30px;
    padding-bottom:30px;
    margin-bottom:50px;
