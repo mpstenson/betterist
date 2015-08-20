@@ -1,5 +1,8 @@
 <head>
-    <title></title>
+    <title><?php wp_title(''); ?>
+<?php if(wp_title('', false)) { echo ' - '; } ?>
+<?php bloginfo('name'); ?></title>
+    <meta content="<?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?><?php bloginfo('name'); ?>" property="og:title" />
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_url'); ?>/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
