@@ -55,8 +55,16 @@ Version: 1.0
   clear: both;
 }
 @media (max-device-width:768px) {
-  [class*='bet-col-'] {
+  .bet-responsive-hide {
+    display:none;
+  }
+  .bet-responsive-stretch{
     width:100%;
+  }
+  article{
+    padding-left:30px;
+    padding-right:30px;
+    word-wrap: break-word;      /* IE */
   }
 }
 .header-container{
