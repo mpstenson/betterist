@@ -13,11 +13,8 @@
 <meta property="og:title" content="<?php single_post_title(''); ?>" />
 <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
 <meta property="og:type" content="article" />
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <?php if (has_post_thumbnail( $post->ID ) ): ?>
-    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-      <meta property="og:image" content="<?php echo $image[0]; ?>" />
-<?php endif; ?>
+<meta property="og:image" content="<?php if (function_exists('wp_get_attachment_thumb_url')) {echo wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); }?>" />
+ 
 <!-- if page is others -->
 <?php } else { ?>
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
