@@ -9,6 +9,10 @@ Version: 1.0
 */
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400|Josefin+Slab:400,600,700);
+html
+{
+  font-size:16px;
+}
 /*grid stuff*/
 .bet-grid
 {
@@ -66,6 +70,15 @@ Version: 1.0
     padding-right:30px;
     word-wrap: break-word;      /* IE */
   }
+  html {
+    font-size: 26px;
+  }
+  .header-container h2 {
+      font-size:2em;
+  }
+  nav {
+    display: none;
+  }
 }
 .header-container{
     height: 100vh;
@@ -78,7 +91,7 @@ Version: 1.0
     text-transform:uppercase;
     font-family: 'Josefin Slab', serif;
     font-weight: 400;
-    font-size: 4em;
+    font-size: 4rem;
     color: #000;
 }
 .header-container h1 a {
@@ -147,7 +160,7 @@ nav a {
 	display:block;
 	padding:0 10px;
 	color:#000;
-	font-size:1em;
+	font-size:1rem;
 	line-height: 20px;
 	text-decoration:none;
 }
@@ -215,12 +228,12 @@ article {
 border-bottom-width: 1px;
     border-bottom-color: #000;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 1em;
+    font-weight: 100;
+    font-size: 1rem;
    padding-top:30px;
    padding-bottom:30px;
    margin-bottom:50px;
-   line-height: 26px;
+   line-height: 1.4rem;
 }
 body{
   font-family: 'Lato', sans-serif;
@@ -248,4 +261,12 @@ article > p:first-child:first-letter {
 article img {
   max-width:100%;
   height:auto;
+}
+blockquote {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
 }
