@@ -14,7 +14,7 @@
 <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>" />
 <meta property="og:type" content="article" />
 <meta property="og:image" content="<?php if (function_exists('wp_get_attachment_thumb_url')) {echo wp_get_attachment_thumb_url(get_post_thumbnail_id($post->ID)); }?>" />
- 
+
 <!-- if page is others -->
 <?php } else { ?>
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
@@ -34,7 +34,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top-20
         }, 1000);
         return false;
       }
