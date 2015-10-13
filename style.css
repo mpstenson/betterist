@@ -81,7 +81,7 @@ html
   }
 }
 .header-container{
-    height: 100vh;
+    min-height: 100vh;
     background-size:cover;
     background-attachment: fixed;
 }
