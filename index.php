@@ -32,7 +32,7 @@
 
                 	<?php the_tags(); ?>
 
-                	<?php the_category(); ?>
+                	Categories: <?php the_category(); ?>
 
                 	<address class="vcard author">
                 		<span class="n"><?php the_author(); ?></span>

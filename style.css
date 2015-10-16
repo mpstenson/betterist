@@ -242,6 +242,13 @@ border-bottom-width: 1px;
    margin-bottom:50px;
    line-height: 1.4rem;
 }
+.post-categories {
+  display: inline;
+  padding-left: 0px;
+}
+.post-categories li {
+  display: inline-block;
+}
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
