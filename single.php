@@ -14,7 +14,7 @@
                 <div class="bet-col-1-10"></div>
                 <div class="bet-col-8-10">
                   <h1 data-uk-parallax="{opacity:0, viewport: -.5, y:0}" class="uk-align-center"><a title="Permanent link to <?php the_title_attribute(); ?>" rel="bookmark" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                  <h2 data-uk-parallax="{opacity:0, viewport: -.5, y:100}"><?php echo the_excerpt(); ?>... </h2>
+                  <h2 data-uk-parallax="{opacity:0, viewport: -.5, y:100}"><?php echo the_excerpt(); ?> </h2>
                   <!--<div class="uk-width-2-10 uk-align-center">Read More</div>-->
                   <a href="#post-<?php the_ID(); ?>" data-uk-parallax="{opacity:0, viewport: -.5, y:200}" class="fa fa-angle-double-down" style="font-size:40px; text-align:center; color:#000; text-decoration:none; width:100%"></a>
                   <div class="bet-col-1-10"></div></div></div></div>
