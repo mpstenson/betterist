@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name=viewport content="width=device-width, initial-scale=1">
 <?php get_header(); ?>
         <div class="bet-grid" id="content-container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
