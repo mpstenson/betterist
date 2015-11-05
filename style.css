@@ -96,6 +96,9 @@ a:hover{
 .page-header{
   padding-top: 60px;
   padding-bottom: 60px;
+  background-size:cover;
+  background-attachment: fixed;
+  min-height: 50vh;
 
 }
 /* Giving a background-color to the nav container. */
