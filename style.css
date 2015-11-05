@@ -65,31 +65,7 @@ a:link, a:visited {
 a:hover{
   text-decoration: underline;
 }
-@media (max-device-width:768px) {
-  .bet-responsive-hide {
-    display:none;
-  }
-  .bet-responsive-stretch{
-    width:100%;
-  }
-  article{
-    padding-left:30px;
-    padding-right:30px;
-    word-wrap: break-word;      /* IE */
-  }
-  html {
-    font-size: 20px;
-  }
-  .header-container h1 {
-      font-size: 1.5rem;
-  }
-  .header-container h2 {
-      font-size:1em;
-  }
-  nav {
-    display: none;
-  }
-}
+
 .header-container{
     min-height: 100vh;
     background-size:cover;
@@ -286,4 +262,29 @@ blockquote {
   margin-left: 50px;
   padding-left: 15px;
   border-left: 3px solid #ccc;
+}
+@media (max-device-width:768px) {
+  .bet-responsive-hide {
+    display:none;
+  }
+  .bet-responsive-stretch{
+    width:100%;
+  }
+  article{
+    padding-left:30px;
+    padding-right:30px;
+    word-wrap: break-word;      /* IE */
+  }
+  html {
+    font-size: 20px;
+  }
+  .header-container h1 {
+      font-size: 1.5rem;
+  }
+  .header-container h2 {
+      font-size:1em;
+  }
+  nav {
+    display: none;
+  }
 }
