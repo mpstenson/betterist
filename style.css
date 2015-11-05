@@ -78,10 +78,10 @@ a:hover{
     word-wrap: break-word;      /* IE */
   }
   html {
-    font-size: 26px;
+    font-size: 20px;
   }
   .header-container h2 {
-      font-size:2em;
+      font-size:1em;
   }
   nav {
     display: none;
