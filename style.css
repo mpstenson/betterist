@@ -266,6 +266,26 @@ blockquote {
   padding-left: 15px;
   border-left: 3px solid #ccc;
 }
+.mobile-menu {
+  display: none;
+  float:right;
+  text-align: right;
+  padding-top:0px;
+  margin-top:0px;
+  margin-bottom:5px;
+  padding-right:15px;
+}
+#mobile-menu-hamburger{
+  padding-top: 15px;
+  padding-right: 15px;
+  float: right;
+}
+@media (min-device-width:768px)
+{
+  .bet-responsive-show {
+    display:none;
+  }
+}
 @media (max-device-width:768px) {
   .bet-responsive-hide {
     display:none;
@@ -289,5 +309,10 @@ blockquote {
   }
   nav {
     display: none;
+  }
+  .menu-item {
+    display:block;
+    padding-top:3px;
+    padding-bottom:3px;
   }
 }
