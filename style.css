@@ -242,10 +242,10 @@ body{
 article > p:first-child:first-letter {
   float: left;
     color: #000;
-    font-size: 79px;
-    line-height: 44px;
-    padding-top: 5px;
-    padding-right: 0px;
+    font-size: 45px;
+    line-height: 29px;
+    padding-top: 13px;
+    padding-right: 5px;
     padding-left: 0px;
     font-family: 'Josefin Slab', serif;
     }
