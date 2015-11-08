@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html <?php language_attributes(); ?>
 <meta name=viewport content="width=device-width, initial-scale=1">
 <head>
     <title><?php wp_title(''); ?>
@@ -51,7 +51,7 @@
 </head>
 
 
-<body <?php body_class( $class ); ?>>
+<body>
   <div style="position:fixed; width:100%; background-color:#fff; ">
 <div class="bet-grid" style="height:50px;">
 <div class="bet-col-5-10 bet-responsive-show" id="site-title"><img src="<?php echo get_template_directory_uri()  ?>/images/LogoWide.png" style="height:50px; float:left;"></div>
