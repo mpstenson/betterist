@@ -21,6 +21,7 @@
 <meta property="og:description" content="<?php bloginfo('description'); ?>" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="logo.jpg" /> <?php } ?>
+<?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
 <?php wp_head(); ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">

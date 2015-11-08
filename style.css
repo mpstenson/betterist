@@ -269,6 +269,12 @@ blockquote {
   padding-left: 15px;
   border-left: 3px solid #ccc;
 }
+textarea#comment {
+  width:100%;
+}
+.comment{
+  list-style-type: none;
+}
 .mobile-menu {
   display: none;
   float:right;
