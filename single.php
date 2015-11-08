@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php get_header(); ?>
         <div class="bet-grid" id="content-container">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

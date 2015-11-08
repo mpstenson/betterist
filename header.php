@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<meta name=viewport content="width=device-width, initial-scale=1">
 <head>
     <title><?php wp_title(''); ?>
 <?php if(wp_title('', false)) { echo ' - '; } ?>
