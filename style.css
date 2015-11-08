@@ -315,4 +315,9 @@ blockquote {
     padding-top:3px;
     padding-bottom:3px;
   }
+  article > p:first-child:first-letter {
+    font-size: 55px;
+    line-height: 29px;
+    padding-top: 21px;
+  }
 }
