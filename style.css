@@ -231,6 +231,9 @@ border-bottom-width: 1px;
 .post-categories li {
   display: inline-block;
 }
+.post-navigation {
+  text-align:center;
+}
 body{
   font-family: 'Lato', sans-serif;
   font-weight: 100;
