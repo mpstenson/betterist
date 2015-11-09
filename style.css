@@ -247,7 +247,7 @@ article > p:first-child:first-letter {
     color: #000;
     font-size: 45px;
     line-height: 29px;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-right: 5px;
     padding-left: 0px;
     font-family: 'Josefin Slab', serif;
@@ -276,7 +276,7 @@ textarea#comment {
   list-style-type: none;
 }
 .sticky{
-  
+
 }
 .wp-caption{
 
