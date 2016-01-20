@@ -52,7 +52,7 @@
 
 
 <body>
-  <div style="position:fixed; width:100%; background-color:#fff; ">
+  <div style="position:fixed; width:100%; background-color:#fff; z-index: 10000;">
 <div class="bet-grid" style="height:50px;">
 <div class="bet-col-5-10 bet-responsive-show" id="site-title"><img src="<?php echo get_template_directory_uri()  ?>/images/LogoWide.png" style="height:50px; float:left;"></div>
 <div class="bet-col-5-10" style="padding-bottom:4px; z-index:1000" >
