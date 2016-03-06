@@ -25,7 +25,7 @@ function word_count() {
     return $word_count;
 }
 function reading_length() {
-    $reading_length = float ceil (wordcount() / 250);
+    $reading_length = ceil(wordcount() / 250);
     return $reading_length;
 }
 ?>
