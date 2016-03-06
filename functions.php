@@ -24,8 +24,8 @@ function word_count() {
     $word_count = str_word_count( strip_tags( $content ) );
     return $word_count;
 }
-function reading_length() {
-    $reading_length = ceil(wordcount() / 250);
-    return $reading_length;
-}
+//function reading_length() {
+//    $reading_length = ceil(wordcount() / 250);
+//    return $reading_length;
+//}
 ?>
