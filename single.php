@@ -22,6 +22,7 @@
 
 
                 		<?php
+                		        echo reading_length();
                 			the_content(__('Continued&hellip;'));
                 			wp_link_pages();
 
