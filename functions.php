@@ -19,11 +19,11 @@ function new_excerpt_more( $more ) {
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-function word_count() {
-    $content = get_post_field( 'post_content', $post->ID );
-    $word_count = str_word_count( strip_tags( $content ) );
-    return $word_count;
-}
+//function word_count() {
+//    $content = get_post_field( 'post_content', $post->ID );
+//    $word_count = str_word_count( strip_tags( $content ) );
+//    return $word_count;
+//}
 //function reading_length() {
 //    $reading_length = ceil(wordcount() / 250);
 //    return $reading_length;
