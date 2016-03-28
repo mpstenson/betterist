@@ -57,13 +57,13 @@
           </div>
           <div class="bet-col-2-10 bet-responsive-hide"></div>
           <div class="bet-grid">
+
+          <?php endwhile; ?>
+            <!-- post navigation -->
             <div class="bet-col-1-1">
               <div class="post-navigation"><?php posts_nav_link(); ?></div>
             </div>
-          </div>
-          <?php endwhile; ?>
-            <!-- post navigation -->
-
+            </div>
             <?php else: ?>
               <!-- no posts found -->
               <?php endif; ?>
